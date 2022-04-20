@@ -1,0 +1,270 @@
+:root {
+    --iconbar-height: 120px;
+  }
+  
+  .Dung-black {
+    background-color: black;
+    color: white;
+    margin-left: var(--iconbar-height);
+  }
+  
+  /* .icon-bar */
+  
+  .icon-bar {
+    width: var(--iconbar-height);
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #222;
+    z-index: 1;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .icon-bar > a {
+    height: 100px;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  
+  .icon-bar > a:hover {
+    background-color: var(--black-color);
+  }
+  
+  .icon-bar > a > i {
+    font-size: 40px;
+    background-color: transparent;
+    width: 120px;
+    height: 20%;
+  }
+  
+  /* page content */
+  #main {
+    padding: 12px 24px;
+    max-width: 980px;
+    margin: auto;
+  }
+  
+  /* header */
+  #home {
+    padding: 16px 32px;
+    text-align: center;
+  }
+  
+  #home > h1 {
+    font-weight: 200;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin: 10px;
+  }
+  
+  #home > p {
+    letter-spacing: 1px;
+    margin: 15px 0px;
+    text-align: center;
+  }
+  
+  /* about section */
+  .about-content > p {
+    opacity: 0.4;
+    line-height: 20px;
+  }
+  
+  .about-content .skill-item__name {
+    opacity: 0.4;
+    letter-spacing: 4px;
+    margin: 8px 0;
+  }
+  
+  .about-content .skill-item__percent {
+    background-color: var(--white-color);
+    margin: 4px 0;
+    height: 28px;
+  }
+  
+  .about-content .skill-item__percent div {
+    background-color: #616161;
+    height: 100%;
+  }
+  
+  .about-content .skill-item__percent .guitar {
+    width: 70%;
+  }
+  
+  .about-content .skill-item__percent .karate {
+    width: 75%;
+  }
+  
+  .about-content .skill-item__percent .camera {
+    width: 55%;
+  }
+  
+  .about-content .skill-item__percent .game {
+    width: 95%;
+  }
+  
+  .about-content .skill-item__percent .chef {
+    width: 80%;
+  }
+  
+  .content .relatives-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+    margin: 16px 0;
+  }
+  
+  .relatives-item {
+    font-weight: bolder;
+  }
+  
+  .relatives-item p:first-child {
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: center;
+    padding: 8px 0;
+  }
+  
+  .price-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .price-option {
+    width: calc(50% - 8px);
+    text-align: center;
+    opacity: 0.6;
+  }
+  
+  .price-option:hover {
+    opacity: 1;
+  }
+  
+  .price-option__name {
+    padding: 32px 16px;
+    background-color: var(--standard-color);
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .price-option__benefits li {
+    line-height: 56px;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+  }
+  
+  .price-option__benefits li:last-child {
+    line-height: 96px;
+    background-color: #f1f1f1;
+  }
+  
+  .price-option__benefits li:nth-child(5) p {
+    height: 120px;
+    padding-top: 20px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 48px;
+    position: relative;
+  }
+  
+  .price-option__benefits li:nth-child(5) p::after {
+    content: "per month";
+    position: absolute;
+    top: 56px;
+    left: calc(50% - 44px);
+    font-size: 16px;
+  }
+  
+  .btn-sign:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 2px;
+  }
+  
+  .reputation-item {
+    display: flex;
+    height: 80px;
+    margin: 28px 0;
+    width: 100vw;
+  }
+  
+  .reputation-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    filter: grayscale(0.6);
+  }
+  
+  .reputation-info {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 40px;
+  }
+  
+  .reputation-info p:last-child {
+    width: 100%;
+  }
+  
+  /* portfolio section */
+  
+  .photo-content img {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  /* contact section */
+  .contact-items {
+    line-height: 60px;
+  }
+  
+  .contact-items i {
+    font-size: 32px;
+    margin-right: 20px;
+  }
+  
+  .contact-input {
+    width: 100%;
+    height: 56px;
+    margin: 8px 0;
+    padding-left: 8px;
+    font-size: 16px;
+  }
+  
+  /* js modal box */
+  .sended-request-box {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(118, 118, 118);
+    line-height: 40px;
+    padding: 0 40px;
+    display: none;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    border-radius: 2px;
+  }
+  
+  /* keyframes */
+  @keyframes fadeIn {
+    from {
+      right: -60px;
+      opacity: 0;
+    }
+    to {
+      right: 20px;
+      opacity: 1;
+    }
+  }
+  
